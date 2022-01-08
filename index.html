@@ -4,6 +4,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Vigorate Coding Challenge</title>
     <style type="text/css">
         /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
@@ -124,12 +125,6 @@
             /*@editable*/
             border: 1px solid #BBBBBB;
         }
-        /**
-			* @tab Page
-			* @section heading 1
-			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
-			* @style heading 1
-			*/
         
         h1 {
             color: #000001 !important;
@@ -143,73 +138,55 @@
             margin-bottom: 10px;
             margin-left: 0;
         }
-        /**
-			* @tab Page
-			* @section heading 2
-			* @tip Set the styling for all second-level headings in your emails.
-			* @style heading 2
-			*/
         
         h2 {
-            color: #404040 !important;
+            color: #ffffff !important;
             display: block;
-            /*@editable*/
             font-family: Helvetica;
-            /*@editable*/
+            /* Need to import */
             font-size: 30px;
-            /*@editable*/
             font-style: normal;
-            /*@editable*/
             font-weight: bold;
-            /*@editable*/
             line-height: 100%;
-            /*@editable*/
             letter-spacing: normal;
-            margin-top: 0;
+            margin-top: 20px;
             margin-right: 0;
             margin-bottom: 10px;
             margin-left: 0;
-            /*@editable*/
-            text-align: left;
         }
-        /**
-			* @tab Page
-			* @section heading 3
-			* @tip Set the styling for all third-level headings in your emails.
-			* @style heading 3
-			*/
         
         h3 {
-            /*@editable*/
-            color: #606060 !important;
+            color: #ffffff !important;
             display: block;
-            /*@editable*/
+            /* Need to import new font */
             font-family: Helvetica;
-            /*@editable*/
-            font-size: 16px;
-            /*@editable*/
-            font-style: italic;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
+            font-size: 14px;
+            font-style: normal;
+            font-weight: bold;
             line-height: 100%;
-            /*@editable*/
             letter-spacing: normal;
             margin-top: 0;
             margin-right: 0;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
             margin-left: 0;
-            /*@editable*/
-            text-align: left;
         }
-        /**
-			* @tab Page
-			* @section heading 4
-			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
-			* @style heading 4
-			*/
         
         h4 {
+            color: #434a54 !important;
+            display: block;
+            font-family: Arial;
+            font-size: 19px;
+            font-weight: normal;
+            line-height: 100%;
+            letter-spacing: normal;
+            margin-top: 20px;
+            margin-right: 0;
+            margin-bottom: 10px;
+            margin-left: 0;
+            text-align: center;
+        }
+        
+        h5 {
             color: #333333 !important;
             display: block;
             font-family: Helvetica;
@@ -334,27 +311,29 @@
         #HeaderContentLeft {
             background-color: #FFFFFF;
         }
+        
+        #HeaderContentLeft td {
+            width: 30%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         /**
 			* @tab Columns
 			* @section left column text
 			* @tip Set the styling for your email's left column content text. Choose a size and color that is easy to read.
 			*/
         
-        .leftColumnContent {
-            /*@editable*/
-            color: #505050;
-            /*@editable*/
-            font-family: Helvetica;
-            /*@editable*/
+        .leftColumnContent,
+        .rightColumnContent {
+            color: #434a54;
+            font-family: Arial;
             font-size: 14px;
-            /*@editable*/
-            line-height: 150%;
+            line-height: 200%;
             padding-top: 0;
             padding-right: 20px;
             padding-bottom: 20px;
             padding-left: 20px;
-            /*@editable*/
-            text-align: left;
+            text-align: center;
         }
         /**
 			* @tab Columns
@@ -379,28 +358,6 @@
         }
         /**
 			* @tab Columns
-			* @section right column text
-			* @tip Set the styling for your email's right column content text. Choose a size and color that is easy to read.
-			*/
-        
-        .rightColumnContent {
-            /*@editable*/
-            color: #505050;
-            /*@editable*/
-            font-family: Helvetica;
-            /*@editable*/
-            font-size: 14px;
-            /*@editable*/
-            line-height: 150%;
-            padding-top: 0;
-            padding-right: 20px;
-            padding-bottom: 20px;
-            padding-left: 20px;
-            /*@editable*/
-            text-align: left;
-        }
-        /**
-			* @tab Columns
 			* @section right column link
 			* @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
 			*/
@@ -419,13 +376,6 @@
             font-weight: normal;
             /*@editable*/
             text-decoration: underline;
-        }
-        
-        .leftColumnContent img,
-        .rightColumnContent img {
-            display: inline;
-            height: auto;
-            max-width: 260px;
         }
         /************************ Contact Styles ****************************/
         
@@ -532,34 +482,25 @@
                 font-size: 24px !important;
                 line-height: 100% !important;
             }
-            /**
-				* @tab Mobile Styles
-				* @section heading 2
-				* @tip Make the second-level headings larger in size for better readability on small screens.
-				*/
             h2 {
                 /*@editable*/
                 font-size: 20px !important;
                 /*@editable*/
                 line-height: 100% !important;
             }
-            /**
-				* @tab Mobile Styles
-				* @section heading 3
-				* @tip Make the third-level headings larger in size for better readability on small screens.
-				*/
             h3 {
                 /*@editable*/
                 font-size: 18px !important;
                 /*@editable*/
                 line-height: 100% !important;
             }
-            /**
-				* @tab Mobile Styles
-				* @section heading 4
-				* @tip Make the fourth-level headings larger in size for better readability on small screens.
-				*/
             h4 {
+                /*@editable*/
+                font-size: 18px !important;
+                /*@editable*/
+                line-height: 100% !important;
+            }
+            h5 {
                 /*@editable*/
                 font-size: 16px !important;
                 /*@editable*/
@@ -714,19 +655,24 @@
                                         <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
                                             <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                 <tr>
-                                                    <td class="leftColumnContent">
+                                                    <td class="leftColumnContent" bgcolor="#4fc1e9">
                                                         <h2>$299</h2>
-                                                        <h2>per month</h2>
+                                                        <h3>per month</h3>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                                                        <h3>Basic</h3>
+                                                    <td valign="top" class="leftColumnContent" bgcolor="#d7f1fa" mc:edit="left_column_content">
+                                                        <h4>Basic</h4>
                                                         Lots of clients & users
+                                                        <br />
                                                         <br /> 250 SKU's
                                                         <br /> 1 GB Storage
                                                         <br /> 3,5% transaction fee
                                                         <br />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="leftColumnContent" bgcolor="#e6e9ed">
                                                         <a class="button" href="" target="_blank">Try a Week</a>
                                                     </td>
                                                 </tr>
@@ -735,22 +681,27 @@
                                         <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
                                             <table border="0" cellpadding="20" cellspacing="0" width="100%" role="presentation">
                                                 <tr>
-                                                    <td class="rightColumnContent">
+                                                    <td class="rightColumnContent" bgcolor="#ffce54">
                                                         <h2>$499</h2>
-                                                        <h2>per month</h2>
+                                                        <h3>per month</h3>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                                                        <h3>Unlimited</h3>
+                                                    <td valign="top" class="rightColumnContent" bgcolor="#fffaed" mc:edit="right_column_content">
+                                                        <h4>Unlimited</h4>
                                                         Lots of clients & users
                                                         <br /> Unlimited SKU's
                                                         <br /> 20 GB Storage
                                                         <br /> 3,5% transaction fee
                                                         <br />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="leftColumnContent" bgcolor="#e6e9ed">
                                                         <a class="button" href="" target="_blank">Try a Week</a>
                                                     </td>
                                                 </tr>
+
                                             </table>
                                         </td>
                                     </tr>
@@ -764,7 +715,7 @@
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateContact" role="presentation">
                                     <tr>
                                         <td valign="top" class="contactContent" mc:edit="body_content">
-                                            <h4>Want to learn more? Contact Us Today!</h4>
+                                            <h5>Want to learn more? Contact Us Today!</h5>
                                             <br />
                                             <a class="" href="" target="_blank">Contact Us </a>
                                         </td>
