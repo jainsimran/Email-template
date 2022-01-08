@@ -149,7 +149,7 @@
             font-weight: bold;
             line-height: 100%;
             letter-spacing: normal;
-            margin-top: 20px;
+            margin-top: 0;
             margin-right: 0;
             margin-bottom: 10px;
             margin-left: 0;
@@ -316,6 +316,7 @@
             width: 30%;
             padding-left: 20px;
             padding-right: 20px;
+            padding-top: 20px;
         }
         /**
 			* @tab Columns
@@ -334,6 +335,17 @@
             padding-bottom: 20px;
             padding-left: 20px;
             text-align: center;
+        }
+        
+        .leftColumnContent button,
+        .rightColumnContent button {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            color: white;
+            /* Font need to change */
+            font-family: Arial;
+            font-size: 14px;
         }
         /**
 			* @tab Columns
@@ -664,8 +676,7 @@
                                                     <td valign="top" class="leftColumnContent" bgcolor="#d7f1fa" mc:edit="left_column_content">
                                                         <h4>Basic</h4>
                                                         Lots of clients & users
-                                                        <br />
-                                                        <br /> 250 SKU's
+                                                        <hr style="border-width:0; height:1px; margin-left: 10px; margin-right: 10px; background-color: #aae1f4;" /> 250 SKU's
                                                         <br /> 1 GB Storage
                                                         <br /> 3,5% transaction fee
                                                         <br />
@@ -673,7 +684,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="leftColumnContent" bgcolor="#e6e9ed">
-                                                        <a class="button" href="" target="_blank">Try a Week</a>
+                                                        <button role="button" style="background-color: #4fc1e9">Try a Week</button>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -690,15 +701,15 @@
                                                     <td valign="top" class="rightColumnContent" bgcolor="#fffaed" mc:edit="right_column_content">
                                                         <h4>Unlimited</h4>
                                                         Lots of clients & users
-                                                        <br /> Unlimited SKU's
+                                                        <hr style="border-width:0; height:1px; margin-left: 10px; margin-right: 10px; background-color: #ffebba;" /> Unlimited SKU's
                                                         <br /> 20 GB Storage
                                                         <br /> 3,5% transaction fee
                                                         <br />
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="leftColumnContent" bgcolor="#e6e9ed">
-                                                        <a class="button" href="" target="_blank">Try a Week</a>
+                                                    <td class="rightColumnContent" bgcolor="#e6e9ed">
+                                                        <button role="button" style="background-color: #ffce54">Try a Week</button>
                                                     </td>
                                                 </tr>
 
