@@ -5,7 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vigorate Coding Challenge</title>
+    <title>Company A monthly plans</title>
     <style type="text/css">
         /******************** RESET STYLES *********************/
         
@@ -102,6 +102,7 @@
             font-family: Arial;
             line-height: 175%;
             font-size: 14px;
+            padding-left: 18px;
         }
         /********************** Header Styles **********************/
         
@@ -155,14 +156,10 @@
             text-align: center;
         }
         
-        .columnContent button {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border: none;
-            color: white;
-            /* Font need to change */
-            font-family: Arial;
-            font-size: 14px;
+        .columnContent .button {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 5px;
         }
         /************************ Contact Styles ****************************/
         
@@ -171,7 +168,8 @@
             padding-bottom: 40px;
         }
         
-        .contactContent button {
+        .contactContent .button {
+            background-color: #8cc152;
             color: #ffffff;
             padding-top: 15px;
             padding-right: 40px;
@@ -180,6 +178,7 @@
             border: none;
             border-radius: 10px;
             font-size: 18px;
+            text-decoration: none;
         }
         /************************ Footer Styles ************************/
         
@@ -204,7 +203,7 @@
         /************************ Hidden on desktop ************************/
         
         @media only screen and (min-width: 481px) {
-            .hidden-lg {
+            .hiddenLg {
                 display: none !important;
             }
         }
@@ -250,7 +249,7 @@
                 font-size: 19px !important;
                 line-height: 150% !important;
             }
-            .hidden-sm {
+            .hiddenSm {
                 display: none !important;
             }
             /******************** Mobile Header Styles ********************/
@@ -269,11 +268,8 @@
             .column {
                 display: block !important;
                 margin: auto;
-                min-width: 80%;
+                min-width: 75%;
                 text-align: center;
-            }
-            .column .plansColumn {
-                width: 80%;
             }
             .columnContent {
                 font-size: 14px !important;
@@ -285,10 +281,10 @@
                 padding-left: 0 !important;
                 padding-bottom: 0 !important;
             }
-            .contactContent button {
+            .contactContent .button {
                 display: block !important;
-                width: 100% !important;
                 border-radius: 0 !important;
+                text-decoration: none;
             }
             /******************** Footer Styles ********************/
             .footerContent {
@@ -324,7 +320,7 @@
                                                 <img src="https://ompenify.sirv.com/Logo.png" width="238" height="38" alt="Company A logo" />
                                             </a>
                                         </td>
-                                        <td align="center" valign="top" class="column hidden-lg">
+                                        <td align="center" valign="top" class="column hiddenLg">
                                             <hr style="height: 1px; background-color: #ffffff; margin-bottom: 10px;" />
                                         </td>
                                         <td align="center" valign="top" class="column iconsWrapper">
@@ -357,12 +353,12 @@
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel molestie velit. Aliquam erat volutpat. Nunc eros purus, consequat quis nibh vel, ullamcorper faucibus felis. Vivamus egestas bibendum
                                                             neque ut mattis. Cras vitae pretium enim, id dapibus nulla. Fusce cursus justo quam, vel dictum odio viverra at. Aenean dignissim libero nec est efficitur, a tincidunt orci elementum.
                                                         </p>
-
                                                         <ul>
                                                             <li>Super Interesting Bullet Point 1</li>
                                                             <li>Super Interesting Bullet Point 1</li>
                                                             <li>Super Interesting Bullet Point 1</li>
                                                         </ul>
+
                                                     </td>
                                                 </tr>
                                             </table>
@@ -395,8 +391,8 @@
                                                             </tr>
                                                             <tr>
                                                                 <td class="columnContent" bgcolor="#e6e9ed">
-                                                                    <button role="button" style="background-color: #4fc1e9">Try a
-                                                                        Week</button>
+                                                                    <a role="button" target="_blank" href="#" class="button" style="background-color: #4fc1e9;">Try a
+                                                                        Week</a>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -421,8 +417,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td class="columnContent" bgcolor="#e6e9ed">
-                                                                    <button role="button" style="background-color: #ffce54">Try a
-                                                                        Week</button>
+                                                                    <a role="button" href="#" class="button" target="_blank" style="background-color: #ffce54">Try a Week</a>
                                                                 </td>
                                                             </tr>
 
@@ -439,9 +434,9 @@
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
                                                 <tr>
                                                     <td valign="top" class="contactContent" align="center">
-                                                        <h5 class="hidden-sm">Want to learn more? Contact Us Today!</h5>
-                                                        <button role="button" style="background-color: #8cc152">Contact
-                                                            Us</button>
+                                                        <h5 class="hiddenSm">Want to learn more? Contact Us Today!</h5>
+                                                        <a role="button" href="#" class="button" target="_blank">Contact
+                                                            Us</a>
                                                     </td>
                                                 </tr>
                                             </table>
