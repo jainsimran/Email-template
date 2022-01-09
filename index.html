@@ -101,6 +101,7 @@
         ul li {
             font-family: Arial;
             line-height: 175%;
+            font-size: 14px;
         }
         /********************** Header Styles **********************/
         
@@ -146,11 +147,6 @@
             text-decoration: underline;
         }
         /* ========== Column Styles ========== */
-        /**
-			* @tab Columns
-			* @section column style
-			* @tip Set the background color and borders for your email's column area.
-			*/
         
         #HeaderContentLeft {
             background-color: #FFFFFF;
@@ -162,11 +158,6 @@
             padding-right: 20px;
             padding-top: 20px;
         }
-        /**
-			* @tab Columns
-			* @section left column text
-			* @tip Set the styling for your email's left column content text. Choose a size and color that is easy to read.
-			*/
         
         .leftColumnContent,
         .rightColumnContent {
@@ -191,11 +182,6 @@
             font-family: Arial;
             font-size: 14px;
         }
-        /**
-			* @tab Columns
-			* @section left column link
-			* @tip Set the styling for your email's left column content links. Choose a color that helps them stand out from your text.
-			*/
         
         .leftColumnContent a:link,
         .leftColumnContent a:visited,
@@ -301,24 +287,14 @@
             }
             /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
             /* ======== Page Styles ======== */
-            /**
-				* @tab Mobile Styles
-				* @section template width
-				* @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
-				*/
             #templateContainer {
                 max-width: 600px !important;
                 /*@editable*/
                 width: 100% !important;
             }
-            /**
-				* @tab Mobile Styles
-				* @section heading 1
-				* @tip Make the first-level headings larger in size for better readability on small screens.
-				*/
             h1 {
-                font-size: 24px !important;
-                line-height: 100% !important;
+                font-size: 24px;
+                line-height: 100%;
             }
             h2 {
                 /*@editable*/
@@ -333,10 +309,8 @@
                 line-height: 100% !important;
             }
             h4 {
-                /*@editable*/
-                font-size: 18px !important;
-                /*@editable*/
-                line-height: 100% !important;
+                font-size: 19px !important;
+                line-height: 120% !important;
             }
             .hidden-sm {
                 display: none;
@@ -349,19 +323,6 @@
             }
             #headerTable a {
                 margin: 0 5px;
-            }
-            /**
-            /* ======== Body Styles ======== */
-            /**
-				* @tab Mobile Styles
-				* @section body text
-				* @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
-				*/
-            .bodyContent {
-                /*@editable*/
-                font-size: 18px !important;
-                /*@editable*/
-                line-height: 125% !important;
             }
             /* ======== Column Styles ======== */
             .column {
@@ -393,8 +354,8 @@
             }
             .contactContent button {
                 display: block;
-                width: 100%;
-                border-radius: 0;
+                width: 100% !important;
+                border-radius: 0 !important;
             }
             /* ======== Footer Styles ======== */
             .footerContent {
@@ -452,12 +413,13 @@
                                                     <td>
                                                         <h1>Heading 1</h1>
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel molestie velit. Aliquam erat volutpat. Nunc eros purus, consequat quis nibh vel, ullamcorper faucibus felis. Vivamus egestas bibendum
-                                                            neque ut mattis. Cras vitae pretium enim, id dapibus nulla. Fusce cursus justo quam, vel dictum odio viverra at. Aenean dignissim libero nec est efficitur, a tincidunt orci elementum.</p>
+                                                            neque ut mattis. Cras vitae pretium enim, id dapibus nulla. Fusce cursus justo quam, vel dictum odio viverra at. Aenean dignissim libero nec est efficitur, a tincidunt orci elementum.
+                                                        </p>
 
                                                         <ul>
                                                             <li>Super Interesting Bullet Point 1</li>
-                                                            <li>Super Interesting Bullet Point 1</li>
-                                                            <li>Super Interesting Bullet Point 1</li>
+                                                            <li>Super Interesting Bullet Point 2</li>
+                                                            <li>Super Interesting Bullet Point 3</li>
                                                         </ul>
                                                     </td>
                                                 </tr>
