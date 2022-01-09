@@ -7,55 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Vigorate Coding Challenge</title>
     <style type="text/css">
-        /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
-        
-        #outlook a {
-            padding: 0;
-        }
-        /* Force Outlook to provide a "view in browser" message */
-        
-        .ReadMsgBody {
-            width: 100%;
-        }
-        
-        .ExternalClass {
-            width: 100%;
-        }
-        /* Force Hotmail to display emails at full width */
-        
-        .ExternalClass,
-        .ExternalClass p,
-        .ExternalClass span,
-        .ExternalClass font,
-        .ExternalClass td,
-        .ExternalClass div {
-            line-height: 100%;
-        }
-        /* Force Hotmail to display normal line spacing */
-        
-        body,
-        table,
-        td,
-        p,
-        a,
-        li,
-        blockquote {
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-        }
-        /* Prevent WebKit and Windows mobile changing default text sizes */
-        
-        table,
-        td {
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-        }
-        /* Remove spacing between tables in Outlook 2007 and up */
-        
-        img {
-            -ms-interpolation-mode: bicubic;
-        }
-        /* Allow smoother rendering of resized image in Internet Explorer */
         /* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
         
         body {
@@ -83,6 +34,35 @@
             padding: 0;
             width: 100% !important;
         }
+        /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+        
+        #outlook a {
+            padding: 0;
+        }
+        /* Force Hotmail to display normal line spacing */
+        
+        body,
+        table,
+        td,
+        p,
+        a,
+        li {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        /* Prevent WebKit and Windows mobile changing default text sizes */
+        
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        /* Remove spacing between tables in Outlook 2007 and up */
+        
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        /* Allow smoother rendering of resized image in Internet Explorer */
         /* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
         /* ========== Page Styles ========== */
         
@@ -167,7 +147,7 @@
             letter-spacing: normal;
             margin-top: 0;
             margin-right: 0;
-            margin-bottom: 0px;
+            margin-bottom: 0;
             margin-left: 0;
         }
         
@@ -433,6 +413,13 @@
             font-weight: normal;
             text-decoration: none;
         }
+        /* /\/\/\/\/\/\/\/\/ DESKTOP STYLES /\/\/\/\/\/\/\/\/ */
+        
+        @media only screen and (mIN-width: 481px) {
+            .hidden-lg {
+                display: none;
+            }
+        }
         /* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
         
         @media only screen and (max-width: 480px) {
@@ -442,8 +429,7 @@
             td,
             p,
             a,
-            li,
-            blockquote {
+            li {
                 -webkit-text-size-adjust: none !important;
             }
             /* Prevent Webkit platforms from changing default text sizes */
@@ -495,13 +481,10 @@
                 /*@editable*/
                 line-height: 100% !important;
             }
-            h5 {
+            .hidden-sm {
                 display: none;
             }
             /* ======== Header Styles ======== */
-            #templateHeader {
-                display: flex;
-            }
             /* Hide the template preheader to save space */
             /**
 				* @tab Mobile Styles
@@ -576,15 +559,18 @@
                     <table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
                         <tr>
                             <td align="center" valign="top">
-                                <!-- BEGIN HEADER - Logo  // -->
+                                <!-- BEGIN HEADER  // -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                     <tr>
-                                        <td valign="top" class="HeaderContent" mc:edit="preheader_content00">
+                                        <td align="center" valign="top" class="templateColumnContainer HeaderContent">
                                             <a href="" target="_blank">
                                                 <img src="https://ompenify.sirv.com/Logo.png" width="238" height="38" alt="Company logo" />
                                             </a>
                                         </td>
-                                        <td valign="top" width="180" class="HeaderContent HeaderList" mc:edit="preheader_content01">
+                                        <td align="center" valign="top" class="templateColumnContainer HeaderContent hidden-lg">
+                                            <hr />
+                                        </td>
+                                        <td align="center" valign="top" class="templateColumnContainer HeaderContent HeaderList">
                                             <a href="" target="_blank">
                                                 <img src="https://ompenify.sirv.com/icons/facebook-icon.png" width="32" height="32" alt="Facebook icon" />
                                             </a>
@@ -602,10 +588,10 @@
                         </tr>
                         <tr>
                             <td align="center" valign="top">
-                                <!-- BEGIN BODY // -->
+                                <!-- BEGIN Intro // -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" role="presentation">
                                     <tr>
-                                        <td valign="top" class="bodyContent" mc:edit="body_content">
+                                        <td valign="top" class="bodyContent">
                                             <h1>Heading 1</h1>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel molestie velit. Aliquam erat volutpat. Nunc eros purus, consequat quis nibh vel, ullamcorper faucibus felis. Vivamus egestas bibendum neque ut mattis. Cras vitae pretium enim, id dapibus
                                             nulla. Fusce cursus justo quam, vel dictum odio viverra at. Aenean dignissim libero nec est efficitur, a tincidunt orci elementum.
@@ -618,14 +604,14 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <!-- // END BODY -->
+                                <!-- // END Intro -->
                             </td>
                         </tr>
                         <tr>
                             <td align="center" valign="top">
                                 <!-- BEGIN COLUMNS // -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="HeaderContentLeft" role="presentation">
-                                    <tr mc:repeatable>
+                                    <tr>
                                         <td align="center" valign="top" class="templateColumnContainer">
                                             <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                 <tr>
@@ -688,7 +674,7 @@
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateContact" role="presentation">
                                     <tr>
                                         <td valign="top" class="contactContent" mc:edit="body_content">
-                                            <h5>Want to learn more? Contact Us Today!</h5>
+                                            <h5 class="hidden-sm">Want to learn more? Contact Us Today!</h5>
                                             <button role="button" style="background-color: #8cc152">Contact Us</button>
                                         </td>
                                     </tr>
