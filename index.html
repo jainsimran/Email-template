@@ -195,7 +195,7 @@
             line-height: 100%;
             margin-top: 0;
             margin-right: 0;
-            margin-bottom: 10px;
+            margin-bottom: 25px;
             margin-left: 0;
         }
         /* ========== Header Styles ========== */
@@ -413,18 +413,12 @@
             color: #ffffff;
             font-family: Arial;
             font-size: 14px;
-            line-height: 150%;
             padding-top: 40px;
             padding-right: 20px;
             padding-bottom: 40px;
             padding-left: 20px;
             text-align: center;
         }
-        /**
-			* @tab Footer
-			* @section footer link
-			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
-			*/
         
         .footerContent a:link,
         .footerContent a:visited,
@@ -502,10 +496,7 @@
                 line-height: 100% !important;
             }
             h5 {
-                /*@editable*/
-                font-size: 16px !important;
-                /*@editable*/
-                line-height: 100% !important;
+                display: none;
             }
             /* ======== Header Styles ======== */
             #templateHeader {
@@ -540,13 +531,9 @@
             /* ======== Column Styles ======== */
             .templateColumnContainer {
                 display: block !important;
-                width: 100% !important;
+                width: 80% !important;
+                margin: auto;
             }
-            /**
-				* @tab Mobile Styles
-				* @section column image
-				* @tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
-				*/
             .columnImage {
                 height: auto !important;
                 /*@editable*/
@@ -554,44 +541,28 @@
                 /*@editable*/
                 width: 100% !important;
             }
-            /**
-				* @tab Mobile Styles
-				* @section left column text
-				* @tip Make the left column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
-				*/
-            .leftColumnContent {
-                /*@editable*/
-                font-size: 16px !important;
-                /*@editable*/
-                line-height: 125% !important;
-            }
-            /**
-				* @tab Mobile Styles
-				* @section right column text
-				* @tip Make the right column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
-				*/
+            .leftColumnContent,
             .rightColumnContent {
-                /*@editable*/
                 font-size: 16px !important;
-                /*@editable*/
-                line-height: 125% !important;
+                line-height: 150% !important;
+            }
+            /* ======== Contact Styles ======== */
+            .contactContent {
+                padding-right: 0;
+                padding-left: 0;
+                padding-bottom: 0;
+            }
+            .contactContent button {
+                display: block;
+                width: 100%;
+                border-radius: 0;
             }
             /* ======== Footer Styles ======== */
-            /**
-				* @tab Mobile Styles
-				* @section footer text
-				* @tip Make the body content text larger in size for better readability on small screens.
-				*/
             .footerContent {
-                /*@editable*/
                 font-size: 14px !important;
-                /*@editable*/
-                line-height: 115% !important;
+                display: flex;
+                justify-content: center;
             }
-            .footerContent a {
-                display: block !important;
-            }
-            /* Place footer social and utility links on their own lines, for easier access */
         }
     </style>
 </head>
@@ -718,7 +689,6 @@
                                     <tr>
                                         <td valign="top" class="contactContent" mc:edit="body_content">
                                             <h5>Want to learn more? Contact Us Today!</h5>
-                                            <br />
                                             <button role="button" style="background-color: #8cc152">Contact Us</button>
                                         </td>
                                     </tr>
