@@ -159,8 +159,7 @@
             padding-top: 20px;
         }
         
-        .leftColumnContent,
-        .rightColumnContent {
+        .columnContent {
             color: #434a54;
             font-family: Arial;
             font-size: 14px;
@@ -172,8 +171,7 @@
             text-align: center;
         }
         
-        .leftColumnContent button,
-        .rightColumnContent button {
+        .columnContent button {
             padding-top: 10px;
             padding-bottom: 10px;
             border: none;
@@ -181,43 +179,6 @@
             /* Font need to change */
             font-family: Arial;
             font-size: 14px;
-        }
-        
-        .leftColumnContent a:link,
-        .leftColumnContent a:visited,
-        /* Yahoo! Mail Override */
-        
-        .leftColumnContent a .yshortcuts
-        /* Yahoo! Mail Override */
-        
-        {
-            /*@editable*/
-            color: #EB4102;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
-            text-decoration: underline;
-        }
-        /**
-			* @tab Columns
-			* @section right column link
-			* @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
-			*/
-        
-        .rightColumnContent a:link,
-        .rightColumnContent a:visited,
-        /* Yahoo! Mail Override */
-        
-        .rightColumnContent a .yshortcuts
-        /* Yahoo! Mail Override */
-        
-        {
-            /*@editable*/
-            color: #EB4102;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
-            text-decoration: underline;
         }
         /************************ Contact Styles ****************************/
         
@@ -368,8 +329,7 @@
                 /*@editable*/
                 width: 100% !important;
             }
-            .leftColumnContent,
-            .rightColumnContent {
+            .columnContent {
                 font-size: 16px !important;
                 line-height: 150% !important;
             }
@@ -393,6 +353,14 @@
 </head>
 
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    <div style="display: none; max-height: 0px; overflow: hidden;">
+        Super interesting plans from Company A
+    </div>
+    <!-- Insert &#847;&zwnj;&nbsp; hack after hidden preview text -->
+    <div style="display: none; max-height: 0px; overflow: hidden;">
+        &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
+    </div>
+
     <center>
         <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" role="presentation">
             <tr>
@@ -463,13 +431,13 @@
                                                     <td align="center" valign="top" class="column plansColumn">
                                                         <table border="0" cellpadding="20" cellspacing="0" width="100%" role="presentation">
                                                             <tr>
-                                                                <td class="leftColumnContent" bgcolor="#4fc1e9">
+                                                                <td class="columnContent" bgcolor="#4fc1e9">
                                                                     <h2>$299</h2>
                                                                     <h3>per month</h3>
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td valign="top" class="leftColumnContent" bgcolor="#d7f1fa">
+                                                                <td valign="top" class="columnContent" bgcolor="#d7f1fa">
                                                                     <h4>Basic</h4>
                                                                     Lots of clients & users
                                                                     <hr style="border-width:0; height:1px; margin-left: 10px; margin-right: 10px; background-color: #aae1f4;" /> 250 SKU's
@@ -479,7 +447,7 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="leftColumnContent" bgcolor="#e6e9ed">
+                                                                <td class="columnContent" bgcolor="#e6e9ed">
                                                                     <button role="button" style="background-color: #4fc1e9">Try a
                                                                         Week</button>
                                                                 </td>
@@ -489,13 +457,13 @@
                                                     <td align="center" valign="top" class="column">
                                                         <table border="0" cellpadding="20" cellspacing="0" width="100%" role="presentation">
                                                             <tr>
-                                                                <td class="rightColumnContent" bgcolor="#ffce54">
+                                                                <td class="columnContent" bgcolor="#ffce54">
                                                                     <h2>$499</h2>
                                                                     <h3>per month</h3>
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td valign="top" class="rightColumnContent" bgcolor="#fffaed">
+                                                                <td valign="top" class="columnContent" bgcolor="#fffaed">
                                                                     <h4>Unlimited</h4>
                                                                     Lots of clients & users
                                                                     <hr style="border-width:0; height:1px; margin-left: 10px; margin-right: 10px; background-color: #ffebba;" /> Unlimited SKU's
@@ -505,7 +473,7 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="rightColumnContent" bgcolor="#e6e9ed">
+                                                                <td class="columnContent" bgcolor="#e6e9ed">
                                                                     <button role="button" style="background-color: #ffce54">Try a
                                                                         Week</button>
                                                                 </td>
