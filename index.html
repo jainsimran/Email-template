@@ -4,8 +4,10 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Company A monthly plans</title>
+
     <style type="text/css">
         /******************** RESET STYLES *********************/
         
@@ -58,25 +60,27 @@
             margin-bottom: 10px;
         }
         
-        h2 {
-            color: #ffffff;
-            font-family: Helvetica;
-            font-size: 30px;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-        
+        h2,
         h3 {
             color: #ffffff;
             font-family: Helvetica;
-            font-size: 14px;
-            font-weight: normal;
-            line-height: 100%;
             margin-top: 0;
             margin-bottom: 0;
         }
         
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        h3 {
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 180%;
+        }
+        
         h4 {
+            font-family: Arial;
             font-size: 19px;
             font-weight: normal;
             margin-top: 0;
@@ -84,11 +88,11 @@
         }
         
         h5 {
-            font-family: Helvetica;
+            font-family: Arial;
             font-size: 24px;
-            font-weight: bold;
+            font-weight: normal;
             margin-top: 0;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
         
         p {
@@ -100,7 +104,7 @@
         
         ul li {
             font-family: Arial;
-            line-height: 175%;
+            line-height: 230%;
             font-size: 14px;
             padding-left: 18px;
         }
@@ -123,7 +127,7 @@
         /*********************** Content Styles ***********************/
         
         .contentWrapper {
-            padding: 20px;
+            padding: 20px 20px 0 20px;
         }
         
         #templateBody {
@@ -149,10 +153,7 @@
             font-family: Arial;
             font-size: 14px;
             line-height: 200%;
-            padding-top: 0;
-            padding-right: 20px;
-            padding-bottom: 20px;
-            padding-left: 20px;
+            padding: 0 20px 20px 20px;
             text-align: center;
         }
         
@@ -165,19 +166,17 @@
         
         .contactContent {
             padding-top: 40px;
-            padding-bottom: 40px;
+            padding-bottom: 45px;
         }
         
         .contactContent .button {
             background-color: #8cc152;
             color: #ffffff;
-            padding-top: 15px;
-            padding-right: 40px;
-            padding-bottom: 15px;
-            padding-left: 40px;
-            border: none;
-            border-radius: 10px;
+            font-family: Arial;
             font-size: 18px;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
             text-decoration: none;
         }
         /************************ Footer Styles ************************/
@@ -234,16 +233,17 @@
             h1,
             h2,
             h3 {
-                line-height: 100% !important;
+                line-height: 130% !important;
             }
             h1 {
                 font-size: 24px !important;
             }
             h2 {
-                font-size: 22px !important;
+                font-size: 30px !important;
+                font-weight: normal;
             }
             h3 {
-                font-size: 18px !important;
+                font-size: 16px !important;
             }
             h4 {
                 font-size: 19px !important;
@@ -252,11 +252,21 @@
             .hiddenSm {
                 display: none !important;
             }
+            ul li {
+                width: 70%;
+                margin: auto;
+                font-size: 12px;
+            }
+            p {
+                font-size: 12px;
+            }
             /******************** Mobile Header Styles ********************/
             .headerWrapper,
-            .contentWrapper,
             .footerWrapper {
                 padding: 20px 10px !important;
+            }
+            .contentWrapper {
+                padding: 20px 10px 0 10px;
             }
             .headerWrapper .iconsWrapper {
                 text-align: center !important;
@@ -285,6 +295,8 @@
                 display: block !important;
                 border-radius: 0 !important;
                 text-decoration: none;
+                font-size: 14px;
+                font-weight: bold;
             }
             /******************** Footer Styles ********************/
             .footerContent {
@@ -316,22 +328,22 @@
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="headerTable" role="presentation">
                                     <tr>
                                         <td align="left" valign="top" class="column">
-                                            <a href="" target="_blank">
-                                                <img src="https://ompenify.sirv.com/Logo.png" width="238" height="38" alt="Company A logo" />
+                                            <a href="#" target="_blank">
+                                                <img src="https://ompenify.sirv.com/Logo.png" width="238" height="38" alt="Company A logo" title="Visit our website" />
                                             </a>
                                         </td>
                                         <td align="center" valign="top" class="column hiddenLg">
                                             <hr style="height: 1px; background-color: #ffffff; margin-bottom: 10px;" />
                                         </td>
                                         <td align="center" valign="top" class="column iconsWrapper">
-                                            <a href="" target="_blank">
-                                                <img src="https://ompenify.sirv.com/icons/facebook-icon.png" width="32" height="32" alt="Facebook icon" />
+                                            <a href="#" target="_blank">
+                                                <img src="https://ompenify.sirv.com/icons/facebook-icon.png" width="32" height="32" alt="Facebook icon" title="Visit us on Facebook" />
                                             </a>
-                                            <a href="" target="_blank">
-                                                <img src="https://ompenify.sirv.com/icons/twitter-icon.png" width="32" height="32" alt="Twitter icon" />
+                                            <a href="#" target="_blank">
+                                                <img src="https://ompenify.sirv.com/icons/twitter-icon.png" width="32" height="32" alt="Twitter icon" title="Visit us on Twitter" />
                                             </a>
-                                            <a href="" target="_blank">
-                                                <img src="https://ompenify.sirv.com/icons/Rss-icon.png" width="32" height="32" alt="RSS icon" />
+                                            <a href="#" target="_blank">
+                                                <img src="https://ompenify.sirv.com/icons/Rss-icon.png" width="32" height="32" alt="RSS icon" title="Visit us on RSS" />
                                             </a>
                                         </td>
                                     </tr>
@@ -455,9 +467,9 @@
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter" role="presentation">
                                     <tr>
                                         <td align="center" valign="top" class="footerContent">
-                                            <a href="">CompanyA.com</a> |
-                                            <a href="">Privacy Policy</a> |
-                                            <a href="">Unsubscribe</a>
+                                            <a href="#" target="_blank">CompanyA.com</a> |
+                                            <a href="#" target="_blank">Privacy Policy</a> |
+                                            <a href="#" target="_blank">Unsubscribe</a>
                                         </td>
                                     </tr>
                                 </table>
