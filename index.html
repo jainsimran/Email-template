@@ -1,5 +1,5 @@
 <!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Vigorate Coding Challenge</title>
     <style type="text/css">
-        /* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+        /******************** RESET STYLES *********************/
         
         body {
             margin: 0;
@@ -23,48 +23,18 @@
         }
         
         table {
-            border-collapse: collapse !important;
+            border-collapse: collapse;
         }
         
         body,
         #bodyTable,
         #bodyCell {
-            height: 100% !important;
+            height: 100%;
             margin: 0;
             padding: 0;
-            width: 100% !important;
+            width: 100%;
         }
-        /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
-        
-        #outlook a {
-            padding: 0;
-        }
-        /* Force Hotmail to display normal line spacing */
-        
-        body,
-        table,
-        td,
-        p,
-        a,
-        li {
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-        }
-        /* Prevent WebKit and Windows mobile changing default text sizes */
-        
-        table,
-        td {
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-        }
-        /* Remove spacing between tables in Outlook 2007 and up */
-        
-        img {
-            -ms-interpolation-mode: bicubic;
-        }
-        /* Allow smoother rendering of resized image in Internet Explorer */
-        /* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
-        /* ========== Page Styles ========== */
+        /********************* Page Styles *********************/
         
         #bodyCell {
             padding: 20px;
@@ -73,162 +43,75 @@
         #templateContainer {
             width: 600px;
         }
-        /**
-			* @tab Page
-			* @section background style
-			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
-			* @theme page
-			*/
         
         body,
         #bodyTable {
             background-color: #DEE0E2;
         }
-        /**
-			* @tab Page
-			* @section background style
-			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
-			* @theme page
-			*/
-        
-        #bodyCell {
-            /*@editable*/
-            border-top: 4px solid #BBBBBB;
-        }
-        /**
-			* @tab Page
-			* @section email border
-			* @tip Set the border for your email.
-			*/
-        
-        #templateContainer {
-            /*@editable*/
-            border: 1px solid #BBBBBB;
-        }
         
         h1 {
-            color: #000001 !important;
-            display: block;
             font-family: Arial;
             font-weight: normal;
             font-size: 36px;
             line-height: 100%;
             margin-top: 0;
-            margin-right: 0;
             margin-bottom: 10px;
-            margin-left: 0;
         }
         
         h2 {
-            color: #ffffff !important;
-            display: block;
+            color: #ffffff;
             font-family: Helvetica;
-            /* Need to import */
             font-size: 30px;
-            font-style: normal;
-            font-weight: bold;
-            line-height: 100%;
-            letter-spacing: normal;
             margin-top: 0;
-            margin-right: 0;
             margin-bottom: 10px;
-            margin-left: 0;
         }
         
         h3 {
-            color: #ffffff !important;
-            display: block;
-            /* Need to import new font */
+            color: #ffffff;
             font-family: Helvetica;
             font-size: 14px;
-            font-style: normal;
-            font-weight: bold;
+            font-weight: normal;
             line-height: 100%;
-            letter-spacing: normal;
             margin-top: 0;
-            margin-right: 0;
             margin-bottom: 0;
-            margin-left: 0;
         }
         
         h4 {
-            color: #434a54 !important;
-            display: block;
-            font-family: Arial;
             font-size: 19px;
             font-weight: normal;
-            line-height: 100%;
-            letter-spacing: normal;
             margin-top: 0;
-            margin-right: 0;
-            margin-bottom: 10px;
-            margin-left: 0;
-            text-align: center;
+            margin-bottom: 0;
         }
         
         h5 {
-            color: #333333 !important;
-            display: block;
             font-family: Helvetica;
             font-size: 24px;
             font-weight: bold;
-            line-height: 100%;
             margin-top: 0;
-            margin-right: 0;
             margin-bottom: 25px;
-            margin-left: 0;
         }
-        /* ========== Header Styles ========== */
-        /**
-			* @tab Header
-			* @section preheader style
-			* @tip Set the background color and bottom border for your email's preheader area.
-			* @theme header
-			*/
+        /********************** Header Styles **********************/
         
         #templateHeader {
-            /*@editable*/
             background-color: #34495e;
-            /*@editable*/
-            border-bottom: 1px solid #34495e;
         }
-        /**
-			* @tab Header
-			* @section preheader text
-			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
-			*/
         
         .HeaderContent {
-            color: #ffffff;
             text-align: left;
             padding-top: 20px;
-            padding-right: 20px;
+            padding-right: 10px;
             padding-bottom: 20px;
-            padding-left: 0;
             vertical-align: middle;
         }
         
         .HeaderList {
-            text-align: end;
+            text-align: right;
         }
-        /**
-			* @tab Header
-			* @section preheader link
-			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
-			*/
         
         .HeaderContent a:link,
-        .HeaderContent a:visited,
-        /* Yahoo! Mail Override */
-        
-        .HeaderContent a .yshortcuts
-        /* Yahoo! Mail Override */
-        
-        {
+        .HeaderContent a:visited {
             margin: 0 5%;
         }
-        /**
-        
         /* ========== Body Styles ========== */
         
         #templateBody {
@@ -256,7 +139,7 @@
         .bodyContent a:visited,
         /* Yahoo! Mail Override */
         
-        .bodyContent a .yshortcuts
+        .bodyContent a
         /* Yahoo! Mail Override */
         
         {
@@ -632,7 +515,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="leftColumnContent" bgcolor="#e6e9ed">
-                                                        <button role="button" style="background-color: #4fc1e9">Try a Week</button>
+                                                        <button role="button" style="background-color: #4fc1e9">Try a
+                                                            Week</button>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -657,7 +541,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="rightColumnContent" bgcolor="#e6e9ed">
-                                                        <button role="button" style="background-color: #ffce54">Try a Week</button>
+                                                        <button role="button" style="background-color: #ffce54">Try a
+                                                            Week</button>
                                                     </td>
                                                 </tr>
 
