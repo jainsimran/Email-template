@@ -90,49 +90,44 @@
             margin-top: 0;
             margin-bottom: 25px;
         }
-        /********************** Header Styles **********************/
         
-        #templateHeader {
-            background-color: #34495e;
+        p {
+            color: #000000;
+            font-family: Arial;
+            font-size: 14px;
+            line-height: 135%;
         }
         
-        .HeaderContent {
+        ul li {
+            font-family: Arial;
+            line-height: 175%;
+        }
+        /********************** Header Styles **********************/
+        
+        .headerWrapper {
+            background-color: #34495e;
             text-align: left;
-            padding-top: 20px;
-            padding-right: 10px;
-            padding-bottom: 20px;
+            padding: 20px;
             vertical-align: middle;
         }
         
-        .HeaderList {
+        .iconsWrapper {
             text-align: right;
         }
         
-        .HeaderContent a:link,
-        .HeaderContent a:visited {
-            margin: 0 5%;
+        #headerTable a {
+            margin-right: 15px;
         }
-        /* ========== Body Styles ========== */
+        /* ========== Content Styles ========== */
+        
+        .contentWrapper {
+            padding: 20px;
+        }
         
         #templateBody {
             background-color: #ffffff;
             border-top: 1px solid #FFFFFF;
             border-bottom: 1px solid #ffffff;
-        }
-        
-        .bodyContent {
-            color: #000000;
-            font-family: Arial;
-            font-size: 14px;
-            line-height: 135%;
-            padding-top: 30px;
-            padding-right: 20px;
-            padding-left: 20px;
-        }
-        
-        .bodyContent ul li {
-            font-family: Helvetica;
-            line-height: 175%;
         }
         
         .bodyContent a:link,
@@ -151,10 +146,6 @@
             text-decoration: underline;
         }
         /* ========== Column Styles ========== */
-        
-        .templateColumnContainer {
-            width: 260px;
-        }
         /**
 			* @tab Columns
 			* @section column style
@@ -244,16 +235,9 @@
         }
         /************************ Contact Styles ****************************/
         
-        #templateContact {
-            background-color: #FFFFFF;
-            text-align: center;
-        }
-        
         .contactContent {
             padding-top: 40px;
-            padding-right: 20px;
             padding-bottom: 40px;
-            padding-left: 20px;
         }
         
         .contactContent button {
@@ -268,7 +252,7 @@
         }
         /* ========== Footer Styles ========== */
         
-        #templateFooter {
+        .footerWrapper {
             background-color: #34495e;
         }
         
@@ -277,21 +261,11 @@
             font-family: Arial;
             font-size: 14px;
             padding-top: 40px;
-            padding-right: 20px;
             padding-bottom: 40px;
-            padding-left: 20px;
             text-align: center;
         }
         
-        .footerContent a:link,
-        .footerContent a:visited,
-        /* Yahoo! Mail Override */
-        
-        .footerContent a .yshortcuts,
-        .footerContent a span
-        /* Yahoo! Mail Override */
-        
-        {
+        .footerContent a {
             color: #ffffff;
             font-weight: normal;
             text-decoration: none;
@@ -368,18 +342,13 @@
                 display: none;
             }
             /* ======== Header Styles ======== */
-            /* Hide the template preheader to save space */
-            /**
-				* @tab Mobile Styles
-				* @section header image
-				* @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
-				*/
-            #headerImage {
-                height: auto !important;
-                /*@editable*/
-                max-width: 600px !important;
-                /*@editable*/
-                width: 100% !important;
+            .headerWrapper,
+            .contentWrapper,
+            .footerWrapper {
+                padding: 20px 10px;
+            }
+            #headerTable a {
+                margin: 0 5px;
             }
             /**
             /* ======== Body Styles ======== */
@@ -395,10 +364,14 @@
                 line-height: 125% !important;
             }
             /* ======== Column Styles ======== */
-            .templateColumnContainer {
+            .column {
                 display: block !important;
-                width: 80% !important;
                 margin: auto;
+                min-width: 80%;
+                text-align: center;
+            }
+            .column .plansColumn {
+                width: 80%;
             }
             .columnImage {
                 height: auto !important;
@@ -409,8 +382,8 @@
             }
             .leftColumnContent,
             .rightColumnContent {
-                font-size: 16px !important;
-                line-height: 150% !important;
+                font-size: 16px;
+                line-height: 150%;
             }
             /* ======== Contact Styles ======== */
             .contactContent {
@@ -425,9 +398,7 @@
             }
             /* ======== Footer Styles ======== */
             .footerContent {
-                font-size: 14px !important;
-                display: flex;
-                justify-content: center;
+                padding: 0;
             }
         }
     </style>
@@ -441,19 +412,19 @@
                     <!-- BEGIN TEMPLATE // -->
                     <table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
                         <tr>
-                            <td align="center" valign="top">
-                                <!-- BEGIN HEADER  // -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
+                            <td align="center" valign="top" class="headerWrapper">
+                                <!-- BEGIN HEADER  TABLE -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="headerTable">
                                     <tr>
-                                        <td align="center" valign="top" class="templateColumnContainer HeaderContent">
+                                        <td align="left" valign="top" class="column">
                                             <a href="" target="_blank">
-                                                <img src="https://ompenify.sirv.com/Logo.png" width="238" height="38" alt="Company logo" />
+                                                <img src="https://ompenify.sirv.com/Logo.png" width="238" height="38" alt="Company A logo" />
                                             </a>
                                         </td>
-                                        <td align="center" valign="top" class="templateColumnContainer HeaderContent hidden-lg">
-                                            <hr />
+                                        <td align="center" valign="top" class="column hidden-lg">
+                                            <hr style="height: 1px; background-color: #ffffff; margin-bottom: 10px;" />
                                         </td>
-                                        <td align="center" valign="top" class="templateColumnContainer HeaderContent HeaderList">
+                                        <td align="center" valign="top" class="column iconsWrapper">
                                             <a href="" target="_blank">
                                                 <img src="https://ompenify.sirv.com/icons/facebook-icon.png" width="32" height="32" alt="Facebook icon" />
                                             </a>
@@ -466,118 +437,132 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <!-- // END HEADER -->
+                                <!--  END HEADER TABLE-->
                             </td>
                         </tr>
                         <tr>
                             <td align="center" valign="top">
-                                <!-- BEGIN Intro // -->
+
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" role="presentation">
                                     <tr>
-                                        <td valign="top" class="bodyContent">
-                                            <h1>Heading 1</h1>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel molestie velit. Aliquam erat volutpat. Nunc eros purus, consequat quis nibh vel, ullamcorper faucibus felis. Vivamus egestas bibendum neque ut mattis. Cras vitae pretium enim, id dapibus
-                                            nulla. Fusce cursus justo quam, vel dictum odio viverra at. Aenean dignissim libero nec est efficitur, a tincidunt orci elementum.
-                                            <br />
-                                            <ul>
-                                                <li>Super Interesting Bullet Point 1</li>
-                                                <li>Super Interesting Bullet Point 1</li>
-                                                <li>Super Interesting Bullet Point 1</li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!-- // END Intro -->
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center" valign="top">
-                                <!-- BEGIN COLUMNS // -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="HeaderContentLeft" role="presentation">
-                                    <tr>
-                                        <td align="center" valign="top" class="templateColumnContainer">
-                                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                        <td valign="top" class="contentWrapper bodyContent">
+                                            <!-- BEGIN Intro TABLE -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" role="presentation">
                                                 <tr>
-                                                    <td class="leftColumnContent" bgcolor="#4fc1e9">
-                                                        <h2>$299</h2>
-                                                        <h3>per month</h3>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td valign="top" class="leftColumnContent" bgcolor="#d7f1fa" mc:edit="left_column_content">
-                                                        <h4>Basic</h4>
-                                                        Lots of clients & users
-                                                        <hr style="border-width:0; height:1px; margin-left: 10px; margin-right: 10px; background-color: #aae1f4;" /> 250 SKU's
-                                                        <br /> 1 GB Storage
-                                                        <br /> 3,5% transaction fee
-                                                        <br />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="leftColumnContent" bgcolor="#e6e9ed">
-                                                        <button role="button" style="background-color: #4fc1e9">Try a
-                                                            Week</button>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td align="center" valign="top" class="templateColumnContainer">
-                                            <table border="0" cellpadding="20" cellspacing="0" width="100%" role="presentation">
-                                                <tr>
-                                                    <td class="rightColumnContent" bgcolor="#ffce54">
-                                                        <h2>$499</h2>
-                                                        <h3>per month</h3>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td valign="top" class="rightColumnContent" bgcolor="#fffaed" mc:edit="right_column_content">
-                                                        <h4>Unlimited</h4>
-                                                        Lots of clients & users
-                                                        <hr style="border-width:0; height:1px; margin-left: 10px; margin-right: 10px; background-color: #ffebba;" /> Unlimited SKU's
-                                                        <br /> 20 GB Storage
-                                                        <br /> 3,5% transaction fee
-                                                        <br />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="rightColumnContent" bgcolor="#e6e9ed">
-                                                        <button role="button" style="background-color: #ffce54">Try a
-                                                            Week</button>
-                                                    </td>
-                                                </tr>
+                                                    <td>
+                                                        <h1>Heading 1</h1>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel molestie velit. Aliquam erat volutpat. Nunc eros purus, consequat quis nibh vel, ullamcorper faucibus felis. Vivamus egestas bibendum
+                                                            neque ut mattis. Cras vitae pretium enim, id dapibus nulla. Fusce cursus justo quam, vel dictum odio viverra at. Aenean dignissim libero nec est efficitur, a tincidunt orci elementum.</p>
 
+                                                        <ul>
+                                                            <li>Super Interesting Bullet Point 1</li>
+                                                            <li>Super Interesting Bullet Point 1</li>
+                                                            <li>Super Interesting Bullet Point 1</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
                                             </table>
+                                            <!-- END Intro TABLE-->
                                         </td>
                                     </tr>
-                                </table>
-                                <!-- // END COLUMNS -->
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center" valign="top">
-                                <!-- BEGIN Contact // -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateContact" role="presentation">
+
                                     <tr>
-                                        <td valign="top" class="contactContent" mc:edit="body_content">
-                                            <h5 class="hidden-sm">Want to learn more? Contact Us Today!</h5>
-                                            <button role="button" style="background-color: #8cc152">Contact Us</button>
+                                        <td align="center" valign="top">
+                                            <!-- BEGIN PLANS TABLE-->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" id="HeaderContentLeft" role="presentation">
+                                                <tr>
+                                                    <td align="center" valign="top" class="column plansColumn">
+                                                        <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td class="leftColumnContent" bgcolor="#4fc1e9">
+                                                                    <h2>$299</h2>
+                                                                    <h3>per month</h3>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="leftColumnContent" bgcolor="#d7f1fa">
+                                                                    <h4>Basic</h4>
+                                                                    Lots of clients & users
+                                                                    <hr style="border-width:0; height:1px; margin-left: 10px; margin-right: 10px; background-color: #aae1f4;" /> 250 SKU's
+                                                                    <br /> 1 GB Storage
+                                                                    <br /> 3,5% transaction fee
+                                                                    <br />
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="leftColumnContent" bgcolor="#e6e9ed">
+                                                                    <button role="button" style="background-color: #4fc1e9">Try a
+                                                                        Week</button>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td align="center" valign="top" class="column">
+                                                        <table border="0" cellpadding="20" cellspacing="0" width="100%" role="presentation">
+                                                            <tr>
+                                                                <td class="rightColumnContent" bgcolor="#ffce54">
+                                                                    <h2>$499</h2>
+                                                                    <h3>per month</h3>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="rightColumnContent" bgcolor="#fffaed">
+                                                                    <h4>Unlimited</h4>
+                                                                    Lots of clients & users
+                                                                    <hr style="border-width:0; height:1px; margin-left: 10px; margin-right: 10px; background-color: #ffebba;" /> Unlimited SKU's
+                                                                    <br /> 20 GB Storage
+                                                                    <br /> 3,5% transaction fee
+                                                                    <br />
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="rightColumnContent" bgcolor="#e6e9ed">
+                                                                    <button role="button" style="background-color: #ffce54">Try a
+                                                                        Week</button>
+                                                                </td>
+                                                            </tr>
+
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- END PLANS TABLE-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <!-- BEGIN Contact TABLE -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+                                                <tr>
+                                                    <td valign="top" class="contactContent" align="center">
+                                                        <h5 class="hidden-sm">Want to learn more? Contact Us Today!</h5>
+                                                        <button role="button" style="background-color: #8cc152">Contact
+                                                            Us</button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- END Contact TABLE-->
                                         </td>
                                     </tr>
                                 </table>
-                                <!-- // END Contact -->
+
                             </td>
                         </tr>
+
+
                         <tr>
-                            <td align="center" valign="top">
-                                <!-- BEGIN FOOTER // -->
+                            <td align="center" valign="top" class="footerWrapper">
+                                <!-- BEGIN FOOTER TABLE// -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter" role="presentation">
                                     <tr>
-                                        <td valign="top" class="footerContent" mc:edit="footer_content00">
-                                            <a href="">CompanyA.com</a> &nbsp;|&nbsp; <a href="">Privacy Policy</a> &nbsp;|&nbsp; <a href="">Unsubscribe</a>&nbsp;
+                                        <td align="center" valign="top" class="footerContent">
+                                            <a href="">CompanyA.com</a> |
+                                            <a href="">Privacy Policy</a> |
+                                            <a href="">Unsubscribe</a>
                                         </td>
                                     </tr>
                                 </table>
-                                <!-- // END FOOTER -->
+                                <!-- // END FOOTER TABLE-->
                             </td>
                         </tr>
                     </table>
