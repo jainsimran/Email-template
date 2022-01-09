@@ -179,7 +179,7 @@
             font-weight: normal;
             line-height: 100%;
             letter-spacing: normal;
-            margin-top: 20px;
+            margin-top: 0;
             margin-right: 0;
             margin-bottom: 10px;
             margin-left: 0;
@@ -221,6 +221,11 @@
         .HeaderContent {
             color: #ffffff;
             text-align: left;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 0;
+            vertical-align: middle;
         }
         
         .HeaderList {
@@ -243,40 +248,29 @@
             margin: 0 5%;
         }
         /**
+        
         /* ========== Body Styles ========== */
-        /**
-			* @tab Body
-			* @section body style
-			* @tip Set the background color and borders for your email's body area.
-			*/
         
         #templateBody {
             background-color: #ffffff;
             border-top: 1px solid #FFFFFF;
             border-bottom: 1px solid #ffffff;
         }
-        /**
-			* @tab Body
-			* @section body text
-			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
-			* @theme main
-			*/
         
         .bodyContent {
             color: #000000;
             font-family: Arial;
             font-size: 14px;
-            line-height: 150%;
-            padding-top: 20px;
+            line-height: 135%;
+            padding-top: 30px;
             padding-right: 20px;
-            padding-bottom: 20px;
             padding-left: 20px;
         }
-        /**
-			* @tab Body
-			* @section body link
-			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
-			*/
+        
+        .bodyContent ul li {
+            font-family: Helvetica;
+            line-height: 175%;
+        }
         
         .bodyContent a:link,
         .bodyContent a:visited,
@@ -292,10 +286,6 @@
             font-weight: normal;
             /*@editable*/
             text-decoration: underline;
-        }
-        
-        .bodyContent ul li {
-            font-family: Helvetica;
         }
         /* ========== Column Styles ========== */
         
@@ -402,32 +392,31 @@
             padding-bottom: 40px;
             padding-left: 20px;
         }
+        
+        .contactContent button {
+            color: #ffffff;
+            padding-top: 15px;
+            padding-right: 40px;
+            padding-bottom: 15px;
+            padding-left: 40px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+        }
         /* ========== Footer Styles ========== */
-        /**
-			* @tab Footer
-			* @section footer style
-			* @tip Set the background color and borders for your email's footer area.
-			* @theme footer
-			*/
         
         #templateFooter {
             background-color: #34495e;
         }
-        /**
-			* @tab Footer
-			* @section footer text
-			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
-			* @theme footer
-			*/
         
         .footerContent {
             color: #ffffff;
             font-family: Arial;
             font-size: 14px;
             line-height: 150%;
-            padding-top: 20px;
+            padding-top: 40px;
             padding-right: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 40px;
             padding-left: 20px;
             text-align: center;
         }
@@ -619,10 +608,12 @@
                                 <!-- BEGIN HEADER - Logo  // -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                     <tr>
-                                        <td valign="top" class="HeaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
-                                            Company A
+                                        <td valign="top" class="HeaderContent" mc:edit="preheader_content00">
+                                            <a href="" target="_blank">
+                                                <img src="https://ompenify.sirv.com/Logo.png" width="238" height="38" alt="Company logo" />
+                                            </a>
                                         </td>
-                                        <td valign="top" width="180" class="HeaderContent HeaderList" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content01">
+                                        <td valign="top" width="180" class="HeaderContent HeaderList" mc:edit="preheader_content01">
                                             <a href="" target="_blank">
                                                 <img src="https://ompenify.sirv.com/icons/facebook-icon.png" width="32" height="32" alt="Facebook icon" />
                                             </a>
@@ -664,7 +655,7 @@
                                 <!-- BEGIN COLUMNS // -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="HeaderContentLeft" role="presentation">
                                     <tr mc:repeatable>
-                                        <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                        <td align="center" valign="top" class="templateColumnContainer">
                                             <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                 <tr>
                                                     <td class="leftColumnContent" bgcolor="#4fc1e9">
@@ -689,7 +680,7 @@
                                                 </tr>
                                             </table>
                                         </td>
-                                        <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                        <td align="center" valign="top" class="templateColumnContainer">
                                             <table border="0" cellpadding="20" cellspacing="0" width="100%" role="presentation">
                                                 <tr>
                                                     <td class="rightColumnContent" bgcolor="#ffce54">
@@ -728,7 +719,7 @@
                                         <td valign="top" class="contactContent" mc:edit="body_content">
                                             <h5>Want to learn more? Contact Us Today!</h5>
                                             <br />
-                                            <a class="" href="" target="_blank">Contact Us </a>
+                                            <button role="button" style="background-color: #8cc152">Contact Us</button>
                                         </td>
                                     </tr>
                                 </table>
@@ -741,7 +732,7 @@
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter" role="presentation">
                                     <tr>
                                         <td valign="top" class="footerContent" mc:edit="footer_content00">
-                                            <a href="">CompanyA.com</a> &nbsp;|&nbsp;<a href="">Privacy Policy</a> &nbsp;|&nbsp;<a href="">Unsubscribe</a>&nbsp;
+                                            <a href="">CompanyA.com</a> &nbsp;|&nbsp; <a href="">Privacy Policy</a> &nbsp;|&nbsp; <a href="">Unsubscribe</a>&nbsp;
                                         </td>
                                     </tr>
                                 </table>
