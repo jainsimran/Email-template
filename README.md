@@ -7,8 +7,8 @@ Github Repo: https://github.com/jainsimran/Email-template
 
 ## Technology Used
 
--HTML
--CSS
+- HTML
+- CSS
 
 ### Responsive Layout
 
@@ -23,8 +23,13 @@ I followed WCAG's AA guideline for accessibility:
 - Ensured the screen readers are working properly.
 
 **Note**
-Following colour contrasts failed the WCAG AA test (tested on https://webaim.org/resources/contrastchecker/). 1. Foreground Color - #ffffff Background Color - #4fc1e9 2. Foreground Color - #ffffff Background Color - #ffce54 3. Foreground Color - #ffffff Background Color - #8cc152
-I used these colour contrast for this test, in real time situtaion I will work with design team to make sure colours used in design mockup passes WCAG AA test.
+
+Following colour contrasts failed the WCAG AA test (tested on https://webaim.org/resources/contrastchecker/).
+
+- Foreground Color - #ffffff Background Color - #4fc1e9
+- Foreground Color - #ffffff Background Color - #ffce54
+- Foreground Color - #ffffff Background Color - #8cc152
+  I used these colour contrast for this test, in real time situtaion I will work with design team to make sure colours used in design mockup passes WCAG AA test.
 
 ### Design Assets
 
