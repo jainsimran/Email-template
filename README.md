@@ -3,7 +3,7 @@
 There are 2 html files:
 
 1. index.html - Main source code for development purpose.
-2. index-inline-css.html - HTML file with inlline css, ready to be sent as an email.
+2. index-with-inline-css.html - HTML file with inlline css, ready to be sent as an email.
 
 Github Repo: https://github.com/jainsimran/Email-template
 
