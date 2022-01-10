@@ -5,11 +5,6 @@ Please open the **index.html** file in any of the supported browsers to view the
 
 Github Repo: https://github.com/jainsimran/Email-template
 
-## Technology Used
-
-- HTML
-- CSS
-
 ### Responsive Layout
 
 It follows a responsive layout using Media Queries where the width is 600px for desktop and break-point is 480px for mobile view.
@@ -18,9 +13,8 @@ It follows a responsive layout using Media Queries where the width is 600px for 
 
 I followed WCAG's AA guideline for accessibility:
 
-- Used **aria** attributes such as **role**, **alt** when needed.
-- Ensured proper tabbing focus styling for keyboard use.
-- Ensured the screen readers are working properly.
+- Used attributes such as **role** and **alt** when needed.
+- Tested accessibility test using tool like Litmus and Accessibility Insights for Web - FastPass (browser plugin).
 
 **Note**
 
