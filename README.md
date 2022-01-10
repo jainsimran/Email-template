@@ -30,12 +30,12 @@ Following colour contrasts failed the WCAG AA test (tested on https://webaim.org
 - Foreground Color - #ffffff Background Color - #ffce54
 - Foreground Color - #ffffff Background Color - #8cc152
 
-I used these colour contrast for this test, in real time situtaion I will work with design team to make sure colours used in design mockup passes WCAG AA test.
+I used these colour contrast for this test. In a real-time situation, I will work with the design team to make sure the colours used in the email pass the WCAG AA test.
 
 ### Design Assets
 
-I extracted the icons and image from design using Adobe Photoshop and used CDN - https://sirv.com/ in order to import them in the code.
+I extracted the icons and images from the design using Adobe Photoshop and used CDN - https://sirv.com/ to import them into the code.
 
 ## Testing
 
-The soluction is tested on litmus -
+This solution is tested on litmus -
