@@ -1,4 +1,4 @@
-# Vigorate - FrontEnd Developer - Coding Challenge by Simran Jain
+# Vigorate - Front End Developer - Coding Challenge by Simran Jain
 
 There are 2 html files:
 
@@ -35,7 +35,14 @@ This email template was tested on:
 2. Gmail Mobile app on iOS
 3. Microsoft Outlook on iOS
 4. Litmust testkit that tested it across multiple email clients on various platforms and devices. Below are some of the screenshots from the test: 
-- ![Apple mail](https://ompenify.sirv.com/Email%20testing/appmail.png)
+<p align="center">
+  <img src="https://ompenify.sirv.com/Email%20testing/chromegmail.png" width="600" title="Apple mail" /> </br>
+  <img src="https://ompenify.sirv.com/Email%20testing/Outlook%20Windows.png" width="600" title="Apple mail" /> </br>
+  <img src="https://ompenify.sirv.com/Email%20testing/appmail.png" width="600" title="Apple mail" /> </br>
+  <img src="https://ompenify.sirv.com/Email%20testing/colorblind.png" width="600" title="Apple mail" /> </br>
+  <img src="https://ompenify.sirv.com/Email%20testing/gmail-ios.png" width="250" alt="accessibility text" /> </br>
+  <img src="https://ompenify.sirv.com/Email%20testing/iphone11pro.png" width="250" alt="accessibility text" />
+</p>
 
 ### Areas to improve
 
