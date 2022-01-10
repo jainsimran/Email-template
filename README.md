@@ -29,7 +29,8 @@ Following colour contrasts failed the WCAG AA test (tested on https://webaim.org
 - Foreground Color - #ffffff Background Color - #4fc1e9
 - Foreground Color - #ffffff Background Color - #ffce54
 - Foreground Color - #ffffff Background Color - #8cc152
-  I used these colour contrast for this test, in real time situtaion I will work with design team to make sure colours used in design mockup passes WCAG AA test.
+
+I used these colour contrast for this test, in real time situtaion I will work with design team to make sure colours used in design mockup passes WCAG AA test.
 
 ### Design Assets
 
