@@ -3,7 +3,7 @@
 There are 2 html files:
 
 1. index.html - Main source code for development purpose.
-2. index-with-inline-css.html - HTML file with inlline css, ready to be sent as an email. Generated via https://templates.mailchimp.com/resources/inline-css/
+2. index-with-inline-css.html - HTML file with inline css, ready to be sent as an email. Generated via https://templates.mailchimp.com/resources/inline-css/
 
 Github Repo: https://github.com/jainsimran/Email-template
 
@@ -20,7 +20,7 @@ The template is responsive with 2 layouts:
 I followed WCAG's AA guideline for accessibility:
 
 - Used attributes such as **role** and **alt** when needed.
-- Tested accessibility test using tool like Litmus and Accessibility Insights for Web - FastPass (browser plugin).
+- Tested accessibility using tool like Litmus and Accessibility Insights for Web - FastPass (browser plugin).
 
 ### Design Assets
 
