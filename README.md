@@ -1,4 +1,4 @@
-# Vigorate - Front End Developer - Coding Challenge by Simran Jain
+# Email HTML Template
 
 There are 2 html files:
 
